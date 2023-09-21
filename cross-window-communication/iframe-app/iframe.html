@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>iframed Application</title>
+    </head>
+
+    <body>
+        <h1>iframed Application</h1>
+        
+        <script>
+            window.addEventListener('message', function(event) {
+            alert(`Received ${event.data} from ${event.origin}`);
+            });
+        </script>
+    </body>
+</html>
